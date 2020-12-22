@@ -1,0 +1,40 @@
+{
+  "name": "@hook/event",
+  "version": "0.1.0",
+  "description": "event manager",
+  "browser": "lib/event.umd.js",
+  "main": "lib/event.cjs.js",
+  "module": "lib/event.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hook-packs/event.git"
+  },
+  "keywords": [
+    "hook",
+    "event"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hook-packs/event/issues"
+  },
+  "homepage": "https://github.com/hook-packs/event#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "rollup": "^2.35.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-filesize": "^9.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "@hook/callback": "^0.1.0",
+    "core-js": "^3.8.1"
+  }
+}
