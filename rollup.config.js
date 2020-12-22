@@ -44,9 +44,6 @@ export default [
         exclude: "node_modules/**"
       })
     ],
-    external: (id) =>
-      /@hook\/callback|core-js|regenerator-runtime|@babel\/runtime-corejs3/.test(
-        id
-      )
+    external: (id) => /@hook\/callback|core-js|regenerator-runtime/.test(id)
   }
 ];
