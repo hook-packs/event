@@ -8,7 +8,7 @@ const isEmpty = (data) => {
   return typeof data === "undefined" || data === "";
 };
 export default class Event {
-  constructor(settings = {}) {
+  constructor() {
     this.hookCallbacks = {};
   }
   getDefaultEventGroup() {
